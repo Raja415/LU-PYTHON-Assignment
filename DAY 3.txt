@@ -1,0 +1,64 @@
+Functions in Python:
+
+1.
+def greet(name):
+   print("Hello, " + name + ". Good morning!")
+
+greet('Paul')
+
+2.
+
+def my_func():
+	x = 100
+	print("Value inside function:",x)
+
+x = 200
+my_func()
+print("Value outside function:",x)
+
+3.def absolute_value(num):
+      if num >= 0:
+        return num
+    else:
+        return -num
+print(absolute_value(2))
+
+print(absolute_value(-4))
+
+4.
+# the use of user-defined functions
+
+def add_numbers(x,y):
+   sum = x + y
+   return sum
+
+num1 = 5
+num2 = 6
+
+print("The sum is", add_numbers(num1, num2))
+
+5.
+x = "global "
+
+def foo():
+    global x
+    y = "local"
+    x = x * 2
+    print(x)
+    print(y)
+
+foo()
+
+6.
+def factorial(x):
+    
+"""This is a recursive function"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+
+num = 3
+print("The factorial of", num, "is", factorial(num))
